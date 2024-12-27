@@ -36,7 +36,7 @@ const ContactForm = () => {
             <input required={true} type="email" name='email' id='email' className=''  placeholder='Email' onChange={(e)=>handleInputChange(e)}/>
             <input required={true} type="text" name='industry' id='industry' className=''  placeholder='Industry' onChange={(e)=>handleInputChange(e)}/>
             <input required={true} type="text" name='organization' id='organization' className='' placeholder='Organization' onChange={(e)=>handleInputChange(e)}/>
-            <button type="submit" className='form_submit_button' onClick={()=>{handleSubmit()}} >Sumbit</button>
+            <button type="submit" className='form_submit_button' onClick={(e)=>{handleSubmit(e)}} >Sumbit</button>
         </form>
         {submitResponse&&<h3 className='submit_message'>{submitResponse.message}</h3>}
     </div>
