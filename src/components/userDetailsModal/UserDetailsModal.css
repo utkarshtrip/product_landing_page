@@ -1,0 +1,29 @@
+.user_details_modal{
+    width: 100%;
+    height: 100% ;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100  ;
+}
+.user_details_modal_inner_container{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    background:linear-gradient(45deg , var(--primary),var(--primary-light));
+    /* background-color: black; */
+    border-radius: 10px;
+}
+.collapse_modal_icon{
+    color: white;
+    scale: 200%;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    background:linear-gradient(45deg , var(--primary),var(--primary-light));
+    border-radius: 50rem;
+}

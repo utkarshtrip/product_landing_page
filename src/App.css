@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  /* overflow-x: hidden; */
+}
+:root{
+  --white-text:white;
+  --text-primary-color: rgb(119, 118, 118);
+  --background-blend:linear;
+  --primary-light:rgb(4, 204, 211);
+  --primary:rgb(0, 91, 161);
+  --primary-translucent:rgba(0, 91, 161,0.5);
+  --primary-background:lightgrey;
+  --primary-shadow:lightblue;
+  --text:black;
+  --primary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --secondary:#b9ed5e;
+}
+.no_select {
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer */
+  user-select: none; 
+}

@@ -1,0 +1,24 @@
+.design_navigation{
+
+}
+.design_navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: var(--primary-font);
+    font-size: large;
+    font-weight: bold;
+}
+.design_navigation ul:hover{
+    cursor: pointer;
+}
+.design_navigation ul li {
+    padding: 5px;
+}
+.active_li{
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+}

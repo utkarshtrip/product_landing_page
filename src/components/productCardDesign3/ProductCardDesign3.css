@@ -1,0 +1,119 @@
+.design_3{
+    aspect-ratio: 1/1;
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+.design_3:hover{
+    backdrop-filter: blur(2px);
+}
+.design_3_inner_container{
+    background: linear-gradient(1deg, rgba(0, 0, 0, 0.849) 20%, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+    font-family: var(--primary-font);
+    position: relative;
+    transition: 0.5s;
+}
+.design_3_heading{
+    /* background-color: var(--primary); */
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    top: 0;
+    border-radius: 50rem;
+    transition: 0.5s;
+}
+.button_container{
+    display: flex;
+    gap: 20px;
+    border: 2px solid transparent;
+}
+.details_paragraph{
+    width: 100%;
+}
+.design_3:hover .button_container{
+    border: 2px solid var(--primary);
+    gap: 40px;
+    padding-left: 20px;
+    color: var(--secondary);
+}
+.arrow{
+    background-color: var(--secondary, #b9ed5e);
+    border-radius: 50%;
+    scale: 1.2;
+}
+.design_3_button{
+    background-color: transparent;
+    font-size: larger;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width:750px) {
+    .design_3{
+        aspect-ratio: 1/1;
+        background-color: var(--primary);
+        width: 40%;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: small;
+    }
+    .design_3_button{
+        font-size: smaller;
+    }
+    .button_container{
+        gap: 5px;
+    }
+    .arrow{
+        scale: 0.75;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .design_3{
+        aspect-ratio: 1/1;
+        background-color: var(--primary-background);
+        width: 100%;
+        color: white;
+        font-size: small;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .design_3_button{
+        font-size: smaller;
+    }
+    .button_container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 5px;
+        transition: 0.5s;
+        border-radius: 50rem;
+    }
+    .button_container{
+        border: 2px solid white;
+        gap: 40px;
+        padding-left: 20px;
+    }
+    .arrow{
+        scale: 0.75;
+    }
+
+}

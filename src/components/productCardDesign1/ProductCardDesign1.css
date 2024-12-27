@@ -1,0 +1,163 @@
+/* Product Card */
+.product_card{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+/* Container css */
+.product_card_innner_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Desgning Even Children of product card */
+.product_card:nth-child(even) .product_card_innner_container{
+    flex-direction: row-reverse;   
+    justify-content: space-evenly;
+    padding-top:20px ;
+}
+.image_container{
+    width: 50%;
+    aspect-ratio: 16/9;
+    position: relative;
+    perspective: 100px;
+}
+.product_card:nth-child(odd) .image_container{ 
+ padding-right: 50px;
+ width: 100%;
+}
+.product_card:nth-child(even) .image_container{
+    padding-left: 50px;
+    width: 100%;
+}
+.product_card:nth-child(even) .product_card_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-size: cover;
+    animation: all 5 ease-in-out 0.5 normal none running;
+    transition: 0.5s;
+     border-radius: 0.5rem;
+}
+.product_card:nth-child(odd) .product_card_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+    background-size: cover;
+    animation: all 5 ease-in-out 0.5 normal none running;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+}
+.product_card:nth-child(odd) .product_card_image:hover{
+    border-radius: 0.5rem;
+    transform: rotateX(-0.5deg);
+    transform: rotateY(0.5deg);
+    box-shadow: 10px 10px 20px rgba(236, 189, 189, 0.548);
+}
+.product_card:nth-child(even) .product_card_image:hover{
+    border-radius: 0.5rem;
+    transform: rotateX(-0.5deg);
+    transform: rotateY(-0.5deg);
+    box-shadow: 10px 10px 20px rgba(236, 189, 189, 0.548);
+}
+.details_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: var(--primary-font) ;
+    color: var(--text-primary-color);
+}
+.details_container h1{
+    color: var(--primary);
+    width: 100%;
+}
+.product_card_button{
+    background-color: var(--primary);
+    color: var(--white-text);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius:50px ;
+    border: none;
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+}
+.product_card .product_card_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: all 5 ease-in-out 0.5 normal none running;
+    gap: 10px;
+    transition: 0.5s;
+}
+.product_card:hover .product_card_button{
+    gap: 30px;
+}
+
+@media screen and (max-width:1000px) {
+    .card_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+}
+/* Media Queries */
+@media screen and (max-width:720px) {
+    .product_card{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .product_card_innner_container{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .product_card:nth-child(even) .product_card_innner_container{
+        flex-direction: column;  
+    }
+    .product_card:nth-child(odd) .image_container{
+        transform: rotateX(0deg);
+        transform: rotateY(0deg); 
+        padding-right: 0px;
+        width: 100%;
+    }
+    .product_card:nth-child(even) .image_container{
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+           width: 100%;
+        padding-left: 0px;
+       }
+       .image_container{
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        perspective: none;
+       }
+    .product_card_image{
+        aspect-ratio: 16/9;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .details_container{
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    .product_card{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+}
