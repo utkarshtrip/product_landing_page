@@ -18,7 +18,7 @@ const ContactForm = () => {
       const response=await axios.post(`http://localhost:4000/contact`,userDetails,{headers:{Accept:'application/json'}})
       console.log(response.data)
       setSubmitResponse(response.data)
-      // window.location.href=redirectUrl
+      window.location.href=redirectUrl
     } catch (error) {
       console.log(error)
     }
