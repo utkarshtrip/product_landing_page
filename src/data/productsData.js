@@ -52,16 +52,16 @@ export const products=[
         },
     ]
     },
-    {
-      name:"Bigdator",
-      image:image3,
-      detailsParagraphs:["Bigdator is our big data tool meant to analyse large amount of unstructured & structured data on the go. By using Bigdator’s various modules, users can do analysis on the data available in public domain like news articles, social media like Facebook pages and on internal text data.",
-      ],
-      subHeading:"The various modules in Bigdator are :",
-      list:["Newsrator: News, Articles, Blogs analysis for company/sector analysis and sentiments",
-        "Sociometor: Social media analytics for knowing customer",
-        "Textrator: Analyse large unstructured text for dejargonising the incomprehensible text and narrations",
-      ],
-      buttonText:"Try Bigdator"
-    },
+    // {
+    //   name:"Bigdator",
+    //   image:image3,
+    //   detailsParagraphs:["Bigdator is our big data tool meant to analyse large amount of unstructured & structured data on the go. By using Bigdator’s various modules, users can do analysis on the data available in public domain like news articles, social media like Facebook pages and on internal text data.",
+    //   ],
+    //   subHeading:"The various modules in Bigdator are :",
+    //   list:["Newsrator: News, Articles, Blogs analysis for company/sector analysis and sentiments",
+    //     "Sociometor: Social media analytics for knowing customer",
+    //     "Textrator: Analyse large unstructured text for dejargonising the incomprehensible text and narrations",
+    //   ],
+    //   buttonText:"Try Bigdator"
+    // },
   ]
