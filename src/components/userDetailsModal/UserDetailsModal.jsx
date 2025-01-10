@@ -9,7 +9,7 @@ const UserDetailsModal = () => {
   return (
     <div className='user_details_modal'>
         <div className="user_details_modal_inner_container">
-        <RxCross2 className='collapse_modal_icon' onClick={()=>dispatch(toggleModal({demo:null}))}/>
+        <RxCross2 className='collapse_modal_icon' onClick={()=>dispatch(toggleModal({interest:null}))}/>
         <ContactForm/>
         </div>
     </div>

@@ -4,8 +4,8 @@ import axios from 'axios'
 import { useSelector } from 'react-redux'
 
 const ContactForm = () => {
-  const {open,demo,redirectUrl}=useSelector(state=>state.userDetailsModal)
-  const [userDetails,setUserDetails]=useState({demo:demo})
+  const {open,interest,redirectUrl}=useSelector(state=>state.userDetailsModal)
+  const [userDetails,setUserDetails]=useState({interest:interest})
   const [submitResponse,setSubmitResponse]=useState()
   const handleInputChange=(e)=>{
     e.preventDefault()
@@ -15,9 +15,9 @@ const ContactForm = () => {
   const handleSubmit=async(e)=>{
     e.preventDefault();
     try {
-      // const response=await axios.post(`http://localhost:4000/contact`,userDetails,{headers:{Accept:'application/json'}})
-      // console.log(response.data)
-      // setSubmitResponse(response.data)
+      const response=await axios.post(`http://localhost:4000/visitors/enter-visitor`,userDetails,{headers:{Accept:'application/json',"Content-Type":"application/json"}})
+      console.log(response.data)
+      setSubmitResponse(response.data)
       window.location.href=redirectUrl
     } catch (error) {
       console.log(error)
@@ -27,8 +27,7 @@ const ContactForm = () => {
     <div className='contact_form_container'>
       <p className='contact_form_heading'>let us know about you</p>
         <form action="" className='contact_form' >
-          {open&&<><input type="hidden" name="demo" id='demo' value={demo} />
-           {/* <input type="text" name='redirectUrl' id='redirectUrl' value={} /> */}
+          {open&&<><input type="hidden" name="interest" id='interest' value={interest} />
            </> }
           
             <input required={true} type="text" name='name' id='name' className=''  placeholder='Name' onChange={(e)=>handleInputChange(e)}/>

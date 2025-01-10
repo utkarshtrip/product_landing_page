@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initialState={
     open:false,
-    demo:null,
+    interest:null,
     redirectUrl:null
 }
 const userDetailsModalSlice=createSlice({
@@ -10,7 +10,7 @@ const userDetailsModalSlice=createSlice({
     reducers:{
         toggleModal:(state,action)=>{
             state.open=!state.open
-            state.demo=action.payload.demo
+            state.interest=action.payload.interest
             state.redirectUrl=action.payload.redirectUrl
         }
     }

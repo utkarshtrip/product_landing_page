@@ -1,0 +1,25 @@
+.dashboard_page{
+    min-height: 100vh;
+    font-family: var(--primary-font);
+    font-size: large;
+}
+.dashboard_page table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgba(128, 128, 128, 0.103);
+}
+tr,th,td,table{
+    border: 2px solid rgba(128, 128, 128, 0.103);
+    padding: 5px;
+}
+.dashboard_page th{
+    background-color: var(--primary);
+    color: white;
+}
+.dashboard_page tr:nth-child(even){
+    background-color: rgb(232, 240, 254);
+}
+tr{
+    text-align: center;
+    font-size: small;
+}

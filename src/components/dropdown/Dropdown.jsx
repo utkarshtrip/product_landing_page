@@ -22,7 +22,7 @@ const Dropdown = ({chatbot}) => {
                 <div className={`chatbot_body ${activeDropdown?'active_dropdown':'inactive_dropdown'}`}>
                   <ul>
                     {chatbot.map((chat)=> 
-                        <li key={chat.id} className='chatbot_list' onClick={()=>dispatch(toggleModal({demo:chat.text,redirectUrl:chat.link}))} >{chat.text}</li>
+                        <li key={chat.id} className='chatbot_list' onClick={()=>dispatch(toggleModal({interest:chat.text,redirectUrl:chat.link}))} >{chat.text}</li>
                     )}
                   </ul>
                 </div>

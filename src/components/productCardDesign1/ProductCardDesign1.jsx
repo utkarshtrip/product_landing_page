@@ -22,7 +22,7 @@ const ProductCardDesign1 = ({prop}) => {
             <ul>
               {prop?.list?.map((element,i)=>(<li key={i}>{element}</li>))}
             </ul>
-              {prop.buttonText&& <button onClick={()=>dispatch(toggleModal({demo:prop.name,redirectUrl:prop.projectLink}))} className='product_card_button'>
+              {prop.buttonText&& <button onClick={()=>dispatch(toggleModal({interest:prop.name,redirectUrl:prop.projectLink}))} className='product_card_button'>
               {prop.buttonText.toUpperCase()}
               <img src={arrow} alt="arrow right" />
             </button>}

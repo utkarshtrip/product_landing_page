@@ -2,7 +2,7 @@ import "./Navbar.css"
 import logo from "../../assets/flairminds-logo.png"
 
 const Navbar = ({location}) =>{
-    const origin="http://localhost:5173"
+    const origin="http://localhost:5174"
     const navLinks=[
       {
       name:"Home",
